@@ -3,7 +3,7 @@ body {
     margin: 0px;
 }
 
-.main{
+.main {
     height: 100%;
 }
 
@@ -15,7 +15,7 @@ body {
     background-color: #333;
 }
 
-.content-area h1{
+.content-area h1 {
     padding: 0;
     margin: 0;
     font-size: 2.4em;
@@ -23,3 +23,232 @@ body {
 }
 
 /* TODO : start writing your own css */
+
+
+
+#bgimg_footer {
+    position: absolute;
+    content: "";
+    height: 48vh;
+    width: 100%;
+    opacity: 0.8;
+    animation: show 6s ease-in infinite;
+
+}
+
+@keyframes show {
+
+    0%,
+    100% {
+        background: url('img/white\ logo\ \(1\).png')no-repeat center center/cover;
+        z-index: -1;
+        background-color: black;
+        background-size: contain;
+    }
+
+    30% {
+        background: url('img/colour\ logo.png')no-repeat center center/cover;
+        z-index: -1;
+        background-color: black;
+        background-size: contain;
+    }
+
+    60% {
+        background: url('img/color-full3.jpeg')no-repeat center center/cover;
+        z-index: -1;
+        background-color: black;
+        background-size: contain;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 48vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+.link-Nav {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 0;
+}
+.link-Nav :hover{
+    color: rgb(190, 190, 190);
+    font-size: 1.3rem;
+}
+
+.link-Nav li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+
+#navigation {
+    margin-top: 2rem;
+    width: 40%;
+    margin-left: 2%;
+    /* border: 2px solid white; */
+
+}
+
+#navigation h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#follow {
+    /* border: 2px solid white; */
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#follow h1 {
+    margin-top: 2rem;
+    margin-left: 3.2rem;
+    line-height: 0.1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#follow div {
+    height: 7rem;
+}
+
+.link {
+    line-height: 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.link img {
+    margin: 0.7rem;
+    /* margin-top: 1.2rem; */
+}
+
+.link img,
+.link-Mail {
+    height: 2.1rem;
+}
+
+.Email {
+    margin-left: -4.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.09rem;
+    margin-bottom: 0.4rem;
+    list-style: none;
+    /* line-height: 0.1rem; */
+}
+
+.Email li {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.tnc a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-left: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.tnc :hover{
+    color: rgb(190, 190, 190);
+    font-size: 1.05rem;
+}
+
+#clglogo,
+#culfestLogo {
+    display: flex;
+    align-items: center;
+}
+
+#clglogo img {
+    margin-left: 3rem;
+    filter: brightness(1.5);
+    animation: shadowChange 6s ease-in-out infinite;
+}
+
+@keyframes shadowChange {
+    0% {
+        filter: brightness(1.5) drop-shadow(0px 0px 3px rgba(255, 0, 0, 0.5));
+    }
+    25% {
+        filter: brightness(1.5) drop-shadow(0px 0px 5px rgba(0, 255, 0, 0.5));
+    }
+    50% {
+        filter: brightness(1.5) drop-shadow(0px 0px 8px rgba(0, 0, 255, 0.5));
+    }
+    75% {
+        filter: brightness(1.5) drop-shadow(0px 0px 10px rgba(255, 255, 0, 0.5));
+    }
+    100% {
+        filter: brightness(1.5) drop-shadow(0px 0px 3px rgba(255, 0, 0, 0.5));
+    }
+}
+
+
+#culfestLogo img {
+    margin-right: 2rem;
+    filter: drop-shadow(0px 0px 3px rgba(255, 0, 0, 0.5));
+    animation: shadowChange 6s ease-in-out infinite;
+}
+
+.center {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+@keyframes translateYAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.animated-image {
+    animation: translateYAnimation 1s ease-in-out infinite alternate;
+
+}
+
+.delay-0 {
+    animation-delay: 0.2s;
+}
+
+.delay-1 {
+    animation-delay: 0.4s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+}
+
+.delay-3 {
+    animation-delay: 0.8s;
+}
+
+#sizecntrl img {
+    height: 2.1rem;
+
+}
+
+#elc {
+    line-height: 0.2;
+}
+
+.location2 {
+    padding-left: 5rem;
+}
+

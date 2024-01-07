@@ -1,0 +1,64 @@
+@media screen and (max-width:413px) {
+    #navigation{
+        display:none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    #bgimg_footer {
+        position: absolute;
+        content: "";
+        height: 50vh;
+        width: 100%;
+        opacity: 0.8;
+        animation: show 6s ease-in infinite;
+    
+    }
+    
+    @keyframes show {
+    
+        0%,
+        100% {
+            background: url('img/white\ logo\ \(1\).png')no-repeat center center/cover;
+            z-index: -1;
+            background-color: black;
+            background-size: contain;
+        }
+    
+        30% {
+            background: url('img/colour\ logo.png')no-repeat center center/cover;
+            z-index: -1;
+            background-color: black;
+            background-size: contain;
+        }
+    
+        60% {
+            background: url('img/color-full3.jpeg')no-repeat center center/cover;
+            z-index: -1;
+            background-color: black;
+            background-size: contain;
+        }
+    }
+    #clglogo{
+        display: none;
+    }
+    #culfestLogo{
+        justify-content: center;
+    }
+    #culfestLogo img{
+        position: relative;
+        right: 7rem;
+        height: 4rem;
+    }
+    .flexMail{
+        display: none;
+    }
+    #elc{
+        display: none;
+    }
+    .tnc{
+        display: none;
+    }
+}
